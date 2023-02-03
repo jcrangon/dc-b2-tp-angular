@@ -6,12 +6,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./france-map.component.scss']
 })
 export class FranceMapComponent {
-  @Output() sendRegionCode: EventEmitter<string> = new EventEmitter<string>()
+  @Output() sendRegionCode: EventEmitter<object> = new EventEmitter<object>()
 
-  onClickRegion(code: string): void
+  onClickRegion(code: string, name: string): void
   {
     console.log(code)
-    this.sendRegionCode.emit(code)
+    console.log(name)
+    this.sendRegionCode.emit({code: code, name: name})
 
   }
 

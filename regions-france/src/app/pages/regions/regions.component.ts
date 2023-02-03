@@ -13,7 +13,8 @@ export class RegionsComponent {
     this.activePage = 'regions'
   }
 
-  getClickedRegionCode(code: string){
-    console.log(code)
+  getClickedRegionCode(regionData: any){
+    console.log(regionData.code)
+    console.log(regionData.name)
   }
 }
