@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-regions',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class RegionsComponent {
   public activePage!: string
 
-  constructor(){
+  constructor(public toaster: ToastrService){
     this.activePage = 'regions'
   }
 
