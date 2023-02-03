@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./regions.component.scss']
 })
 export class RegionsComponent {
+  public activePage!: string
 
+  constructor(){
+    this.activePage = 'regions'
+  }
 }
