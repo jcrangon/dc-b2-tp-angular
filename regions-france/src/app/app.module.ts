@@ -13,6 +13,7 @@ import { registerLocaleData } from '@angular/common';
 import { UcfirstPipe } from './pipes/ucfirst.pipe';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { FranceMapComponent } from './components/france-map/france-map.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HeroComponent } from './components/hero/hero.component';
     UcfirstPipe,
     HeaderComponent,
     HeroComponent,
+    FranceMapComponent,
   ],
   imports: [
     BrowserModule,

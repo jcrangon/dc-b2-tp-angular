@@ -11,4 +11,8 @@ export class RegionsComponent {
   constructor(){
     this.activePage = 'regions'
   }
+
+  getClickedRegionCode(code: string){
+    console.log(code)
+  }
 }
