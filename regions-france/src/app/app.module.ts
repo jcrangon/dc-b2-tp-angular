@@ -17,6 +17,7 @@ import { UcfirstPipe } from './pipes/ucfirst.pipe';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { FranceMapComponent } from './components/france-map/france-map.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FranceMapComponent } from './components/france-map/france-map.component
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    NgxPaginationModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue:'fr-FR'}
